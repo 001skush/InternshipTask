@@ -1,19 +1,51 @@
-# InternshipTask
+# Internship Task
 
 ## Deploying an end-to-end website to store the data of students using AWS EC2 and Amazon RDS.
 
->First creating the database using Amazon RDS in mysql.
+First creating the database using Amazon RDS in mysql.
+> Amazon RDS
+>>Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups.
+>>>Amazon RDS for SQL Server
+>>>>SQL Server is a relational database management system developed by Microsoft. Amazon RDS for SQL Server makes it easy to set up, operate, and scale SQL Server deployments in the cloud. You do not need separately purchased Microsoft SQL Server licenses
 
 Amazon RDS-> Databases-> Create database.
 
-> Now Creating an EC2 instance
- 
-EC2-> Launch instance-> ubuntu server -> Launch.
+"1. Basic aspects of AWS Elastic Compute Cloud."
 
-Now connecting to ec2 server.
+>EC2 (Elastic Compute Cloud)
+>>Amazon EC2 (Elastic Compute Cloud) is a web service interface that provides resizable compute capacity in the AWS cloud. It is designed for developers to have complete control over web-scaling and computing resources. EC2 instances can be resized and the number of instances scaled up or down as per our requirement.
+>>>Amazon Elastic Compute Cloud (Amazon EC2) offers the broadest and deepest compute platform, with over 475 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload.
 
-logging in using public ip address or direct connect from your ec2 instance.
+"2. Creating a virtual machine instance in AWS EC2.
 
+>Now Creating an EC2 instance
+
+>EC2-> Launch instance-> ubuntu server -> Launch.
+
+>Now connecting to ec2 server."
+
+>logging in using public IP address or direct connect from your ec2 instance.
+
+"3.install an Apache webserver on AWS EC2 Instance."
+>For installing the apache server in ec2, direct connect ec2 instance
+>After logging in type:
+
+```bash
+sudo -i
+yum -y install httpd       #install apache server
+chkconfig httpd on
+cd /var/www/html
+vi index.html
+"INSERT mode"              #we can type anything in it 
+:wq!                       #save/quit
+
+service httpd start        #start the service
+#Apache server is now started.
+#Now stop the apache server by using this command:
+service httpd stop    or   /sbin/service httpd stop 
+```
+
+Now,
 First select the directory in which our key file is located. then logging in using this command : 
 
 ```bash
@@ -22,6 +54,7 @@ ssh -i ./internship-task.pem ubuntu@IP_address
 ```
 logged in.
 
+"4. connecting an AWS EC2 instance to a MySQL server database."
 > Now connecting RDS, First we need to deploy mysql client on this machine which will help us to connect to our RDS machine.
 
 ```bash
