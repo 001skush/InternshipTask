@@ -6,7 +6,7 @@ app = Flask(__name__)
 host = "students.cszdt2jowlxz.us-east-2.rds.amazonaws.com"
 port = 3306
 user = "sarvesh"
-password = "Sarvesh001"
+password = ""
 db = "students"
 
 
