@@ -107,7 +107,7 @@ logout     #logout from your ec2 instance
 
 customhost = "students.cszdt2jowlxz.us-east-2.rds.amazonaws.com"
 customuser = "sarvesh"
-custompass = "Sarvesh001"
+custompass = ""
 customdb = "students"
 custombucket = "add-student"
 
