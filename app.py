@@ -3,11 +3,11 @@ import pymysql
 
 app = Flask(__name__)
 
-host = "students.cszdt2jowlxz.us-east-2.rds.amazonaws.com"
+host = "database-1.cnrqxlnrotsn.ap-south-1.rds.amazonaws.com"
 port = 3306
-user = "sarvesh"
+user = "Sarvesh"
 password = "Sarvesh001"
-db = "students"
+db = "database-1"
 
 
 @app.route("/add", methods=["GET", "POST"])
