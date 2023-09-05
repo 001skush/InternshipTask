@@ -20,7 +20,7 @@ Amazon RDS-> Databases-> Create database.
 
 >Now Creating an EC2 instance
 
->EC2-> Launch instance-> ubuntu server -> Launch.
+>EC2-> Launch instance-> linux server -> Launch.
 
 >Now connecting to ec2 server."
 
